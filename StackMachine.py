@@ -11,7 +11,7 @@ class StackMachine:
     def pop(self):
         if len(self.stack) == 0:
             return "None"
-        else
+        else:
             return self.stack.pop()
 
     def add(self):
