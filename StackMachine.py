@@ -6,7 +6,10 @@ class StackMachine:
         self.stack = []
 
     def push(self,num):
-        self.stack.append(num)
+        if len(self.stack) == 0:
+            return "None"
+        else:
+            self.stack.append(num)
 
     def pop(self):
         return self.stack.pop()
