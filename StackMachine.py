@@ -6,13 +6,13 @@ class StackMachine:
         self.stack = []
 
     def push(self,num):
-        if len(self.stack) == 0:
-            return "None"
-        else:
-            self.stack.append(num)
+        self.stack.append(num)
 
     def pop(self):
-        return self.stack.pop()
+        if len(self.stack) == 0:
+            return "None"
+        else
+            return self.stack.pop()
 
     def add(self):
         if(len(self.stack) == 2):
